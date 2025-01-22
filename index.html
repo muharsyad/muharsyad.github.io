@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muha Code Indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar flx-rw">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo-nav.png" alt=""></a>
+        </div>
+        <div class="nav-links flx-rw" id="navLinks">
+            <a href="#" class="active">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Services</a>
+            <a href="#">AI Tools</a>
+            <a href="#">Books</a>
+            <a href="#">Blog</a>
+            <a href="#">Resources</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <i class="ri-menu-fill"></i>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section flx-rw parent-section">
+        <div class="child-section content flx-cl">
+            <h1>Unlock the Power of Data and AI with <span style="color: #004577;">Muha</span><span style="color: #ff9933;">Code</span></h1>
+            <p>Learn, Build, and Innovate with the Best in Mathematics, Data Science, and Artificial Intelligence</p>
+            <div class="cta-buttons flx-rw">
+                <a href="#" class="btn-1">Explore Course</a>
+                <a href="#" class="btn-2">Try AI Tools</a>
+            </div>
+        </div>
+        <div class="child-section visual flx-rw">
+            <img src="assets/herosection.png" alt="">
+        </div>
+    </div>
+
+    <!-- COURSE SECTION -->
+    <div class="course-section parent-section flx-cl">
+        <h2>Master the Future with Our Courses</h2>
+        <p>From online to offline, dive into courses that cover Data Science, AI, Machine Learning, and more.</p>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-1.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque porro aspernatur a tempore sed ipsa provident! Asperiores, minima. Eius!</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-2.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque porro aspernatur a tempore sed ipsa provident! Asperiores, minima. Eius!</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-3.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque porro aspernatur a tempore sed ipsa provident! Asperiores, minima. Eius!</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-4.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque porro aspernatur a tempore sed ipsa provident! Asperiores, minima. Eius!</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)"><i class="ri-arrow-left-s-line"></i></button>
+            <button class="next" onclick="changeSlide(1)"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+        <div class="cta-buttons">
+            <a href="#" class="btn-3">Show More</a>
+        </div>
+    </div>
+
+    <div class="service-section flx-rw parent-section">
+        <div class="child-section header">
+            <h2>Data dan AI Services Tailored for You</h2>
+            <p>Let us handle your data challenges. From analysis to model development, we provide customized solutions.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-1">Show More</a>
+            </div>
+        </div>
+        <div class="child-section grid-container">
+            <div class="grid-item" style="background-color: #565d6f;">
+                <a href="#">
+                    <img src="assets/icon-1.png" alt="">
+                    <h4>Data Processing</h4>
+                </a>
+            </div>
+            <div class="grid-item" style="background-color: #1f4d99;">
+                <a href="#">
+                    <img src="assets/icon-2.png" alt="">
+                    <h4>Data Analysis</h4>
+                </a>
+            </div>
+            <div class="grid-item" style="background-color: #ba5b67;">
+                <a href="#">
+                    <img src="assets/icon-3.png" alt="">
+                    <h4>Mathematical Model Creation</h4>
+                </a>
+            </div>
+            <div class="grid-item" style="background-color: #709d9e;">
+                <a href="#">
+                    <img src="assets/icon-4.png" alt="">
+                    <h4>Custom AI Development</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI TOOLS SECTION -->
+    <div class="ai-tool-section parent-section flx-cl">
+        <div class="header">
+            <h2>Explore AI Apps Built for Real-World Impact</h2>
+            <p>Unlock the power of AI with innovative apps designed to solve everyday challenges and transform industries.</p>
+        </div>
+        <div class="card-section flx-rw">
+            <div class="card">
+                <img src="assets/ai-tools-3.gif" alt="">
+                <h3>Object Detection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis rem ipsa corrupti adipisci molestias, pariatur at magni similique suscipit.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-1">Try It</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/ai-tools-3.gif" alt="">
+                <h3>Object Detection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis rem ipsa corrupti adipisci molestias, pariatur at magni similique suscipit.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-1">Try It</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="#" class="btn-1">Show More</a>
+        </div>
+    </div>
+
+    <!-- BOOK SECTION -->
+    <div class="ebook-section parent-section flx-rw">
+        <div class="child-section header">
+            <h2>Shop eBooks to Elevate Your Skills</h2>
+            <p>Get the latest eBooks in AI, Data Science, and more.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-2">Show More</a>
+            </div>
+        </div>
+        <div class="child-section flx-rw card-section">
+            <div class="card" style="background-color: #275b82;">
+                <a href="#">
+                    <img src="assets/book-1.png" alt="">
+                    <h4>Pemrograman Python</h4>
+                </a>
+            </div>
+            <div class="card" style="background-color: #ddd3a7;">
+                <a href="#">
+                    <img src="assets/book-2.png" alt="">
+                    <h4 style="color: black;">Pemrograman Python</h4>
+                </a>
+            </div>
+            <div class="card" style="background-color: #e3a350;">
+                <a href="#">
+                    <img src="assets/book-5.png" alt="">
+                    <h4>Pemrograman Python</h4>
+                </a>
+            </div>
+            <div class="card" style="background-color: #929492;">
+                <a href="#">
+                    <img src="assets/book-4.png" alt="">
+                    <h4>Pemrograman Python</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-section parent-section flx-cl">
+        <h2>What Our Users Say</h2>
+        <p>Hear from our community about how Muhacode has helped them achieve their goals in AI, Data Science, and beyond.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4>Jane Doe</h4>
+                <span class="work-name">Data Scienctist</span>
+                <p>"The data science course was incredibly insighful and practical. It helped me land a new job in just a few months.</p>
+            </div>
+            <div class="grid-item">
+                <h4>Jane Doe</h4>
+                <span class="work-name">Data Scienctist</span>
+                <p>"The data science course was incredibly insighful and practical. It helped me land a new job in just a few months.</p>
+            </div>
+            <div class="grid-item">
+                <h4>Jane Doe</h4>
+                <span class="work-name">Data Scienctist</span>
+                <p>"The data science course was incredibly insighful and practical. It helped me land a new job in just a few months.</p>
+            </div>
+            <div class="grid-item">
+                <h4>Jane Doe</h4>
+                <span class="work-name">Data Scienctist</span>
+                <p>"The data science course was incredibly insighful and practical. It helped me land a new job in just a few months.</p>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="#" class="btn-1">Read More Reviews</a>
+        </div>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="abous-us-section parent-section flx-cl">
+        <h2>About Muhacode</h2>
+        <p class="sub-title">Empowering Innovation with AI, Data Science, and Beyond</p>
+        <p>At Muhacode, we are dedicated to transforming ideas into impactful solutions.
+            By offering topnotch training, cutting-edge tools, and professional services 
+            in AI, Machine Learning, and Data Science, we help individuals and businesses 
+            unlock their full potential in the digital era.
+        </p>
+        <div class="key-highlights flx-rw">
+            <div class="item">
+                <a href="#" class="flx-cl">
+                    <i class="ri-presentation-fill"></i>
+                    <h4>Expert-Led Training</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="flx-cl">
+                    <i class="ri-database-fill"></i>
+                    <h4>Comprehensive Resources</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="flx-cl">
+                    <i class="ri-apps-2-ai-fill"></i> 
+                    <h4>Innovative AI Tools</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="flx-cl">
+                    <i class="ri-user-community-fill"></i>
+                    <h4>Global Community</h4>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="flx-cl">
+                    <i class="ri-service-fill"></i>
+                    <h4>End-to-End Services</h4>
+                </a>
+            </div>
+        </div>
+        <p>Discover how Muhacode can empower your journey in AI and Data Science. Join us today!</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn-1">Learn More</a>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer-section parent-section flx-cl">
+        <div class="flx-rw">
+            <div class="child-section muhacode">
+                <img src="assets/logo-nav.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae amet optio! Praesentium nostrum quisquam, voluptatibus laborum similique voluptatum assumenda!</p>
+                <div class="flx-rw">
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+            </div>
+            <div class="child-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#">E-Books</a></li>
+                </ul>
+            </div>
+            <div class="child-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+            </div>
+            <div class="child-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: <a href="mailto:hello@muhacode.com">hello@muhacode.com</a></li>
+                    <li>Phone: <a href="wa.me/+6282235506108">+62 822 3550 6108</a></li>
+                    <li>Address : Jalan Serayu XVI no 144B, Banyumas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="copy-right">
+            <p>&copy 2024 Muhacode. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

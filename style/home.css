@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #fffffc;
+    --color-2: #ffc6ff;
+    --color-3: #bdb2ff;
+    --color-4: #a0c4ff;
+    --color-5: #9bf6ff;
+    --color-6: #caffbf;
+    --color-7: #fdffb6;
+    --color-8: #ffd6a5;
+    --color-9: #ffadad;
+
+    --font-body: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-1);
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 1em;
+}
+
+a {
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+.flx-rw {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flx-cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: var(--color-4);
+    padding: 10px 100px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.navbar .logo img{
+    height: 5vh;
+}
+
+.navbar .nav-links {
+    background-color: var(--color-4);
+}
+
+.navbar .nav-links a {
+    color: #000;
+    padding: 7px 14px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: var(--color-4);
+    margin: 0 5px;
+}
+
+/* HERO SECTION */
+.parent-section {
+    padding: 20px 100px;
+}
+
+.hero-section {
+    gap: 20px;
+    background-color: var(--color-surface-mixed-600);
+}
+
+.child-section {
+    width: calc(50% - 10px);
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+.child-section.content h1, .child-section.content p {
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.child-section.visual {
+    justify-content: flex-end;
+}
+
+.child-section.visual img {
+    width: 100%;
+}
+
+.child-section.content {
+    align-items: flex-start;
+}
