@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1E1E1E;
+    --text-primary: #E0E0E0;
+    --text-secondary: #B0B0B0;
+    --accent-primary: #00ADB5;
+    --accent-secondary: #F8C630;
+    --error: #FF4C4C;
+    --success: #3CCF4E;
+    --free-badge: #4CAF50;
+    --paid-badge: #E74C3C;
+    --badge-ai: #4CAF50;
+    --badge-ml: #E74C3C;
+    --badge-data: #F39C12;
+    --badge-consult: #F39C12;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flx-rw {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a.btn-more {
+    display: block;
+    background-color: var(--accent-primary);
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    padding: 7px 14px;
+    color: var(--bg-primary);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+a.btn-more:hover {
+    background-color: var(--accent-secondary);
+}
+
+.navbar {
+    background-color: var(--bg-primary);
+    padding: 13px 100px;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    overflow: hidden;
+    border-bottom: 1px solid var(--text-secondary);
+    z-index: 1;
+}
+
+.navbar a {
+    color: var(--text-primary);
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 7px 14px;
+    margin: 0 10px;
+}
+
+.navbar a.name {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.navbar a.right {
+    float: right;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    background-color: var(--bg-secondary);
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.hero-section {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 50px 100px;
+}
+
+.hero-section .flx-item {
+    width: calc(50% - 50px);
+}
+
+.hero-section h1 {
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    margin-bottom: 30px;
+}
+
+.hero-section .call-btn {
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.hero-section .call-btn .flx-item {
+    width: auto;
+}
+
+.hero-section .call-btn .flx-item a {
+    background-color: var(--accent-primary);
+    padding: 7px 14px;
+    color: var(--bg-secondary);
+    border-radius: 5px;
+}
+
+.hero-section img {
+    width: 100%;
+}
+
+.about-me-section {
+    padding: 50px 100px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    align-items: flex-start;
+}
+
+.about-me-section .flx-item {
+    width: calc(50% - 50px);
+}
+
+.about-me-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-me-section .call-btn a {
+    background-color: var(--accent-secondary);
+    padding: 7px 14px;
+    color: var(--bg-secondary);
+    border-radius: 5px;
+}
+
+.about-me-section ul {
+    list-style: none;
+}
+
+.about-me-section ul li {
+    margin: 5px;
+}
+
+.portfolio-section {
+    background-color: var(--bg-primary);
+    padding: 50px 100px;
+    color: var(--text-primary);
+}
+
+.portfolio-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: var(--accent-secondary);
+    margin: 18px 0;
+}
+
+.card p {
+    color: var(--text-secondary);
+    margin: 16px 0;
+}
+
+.links a {
+    display: inline-block;
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background-color: var(--accent-secondary);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.free {
+    background-color: var(--free-badge);
+}
+
+.paid {
+    background-color: var(--paid-badge);
+}
+
+.ai {
+    background-color: var(--badge-ai);
+}
+
+.ml {
+    background-color: var(--badge-ml);
+}
+
+.data {
+    background-color: var(--badge-data);
+}
+
+.consult {
+    background-color: var(--badge-consult);
+}
+
+.course-section {
+    background-color: var(--bg-primary);
+    padding: 50px 100px;
+    color: var(--text-primary);
+}
+
+.course-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blog-section {
+    padding: 50px 100px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service-section {
+    padding: 50px 100px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.service-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    padding: 50px 100px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-container input, 
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--text-secondary);
+    border-radius: 5px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.contact-container button {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: var(--accent-secondary);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--text-primary);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--accent-primary);
+}
+
+@media screen and (max-width:1050px) {
+    .navbar {
+        padding: 13px 50px;
+    }
+    .hero-section, .about-me-section, .portfolio-section, .course-section, .blog-section, .service-section, .contact-section {
+        padding: 25px 50px;
+    }
+
+    .hero-section .flx-item, .about-me-section .flx-item {
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width:960px) {
+    .hero-section .call-btn {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .navbar {
+        padding: 13px 25px;
+    }
+    .hero-section, .about-me-section, .portfolio-section, .course-section, .blog-section, .service-section, .contact-section {
+        padding: 25px 50px;
+    }
+    .hero-section .flx-item, .about-me-section .flx-item {
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+        color: var(--text-primary);
+        font-size: 1em;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 25px;
+        top: 13px;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 5px 0;
+    }
+    .navbar.responsive {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    .hero-section.flx-rw, .about-me-section.flx-rw {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-section img {
+        width: 50%;
+        display: flex;
+        display: block;
+        margin: auto;
+    }
+    .hero-section .flx-item, .about-me-section .flx-item {
+        width: 100%;
+        
+    }
+}
+@media (max-width: 600px) {
+    .contact-container {
+        max-width: 100%;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .hero-section, .about-me-section, .portfolio-section, .course-section, .blog-section, .service-section, .contact-section {
+        padding: 25px 25px;
+    }
+    .hero-section img {
+        width: 100%;
+        display: flex;
+        display: block;
+        margin: auto;
+    }
+}
