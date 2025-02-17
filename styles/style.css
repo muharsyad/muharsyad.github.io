@@ -64,6 +64,11 @@ a.btn-more:hover {
     background-color: var(--accent-secondary);
 }
 
+#pdf-frame {
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
 .navbar {
     background-color: var(--bg-primary);
     padding: 13px 100px;
@@ -446,5 +451,11 @@ a.btn-more:hover {
         display: flex;
         display: block;
         margin: auto;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .hero-section .call-btn {
+        flex-direction: column;
     }
 }
