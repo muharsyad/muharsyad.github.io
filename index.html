@@ -3,111 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Arsyad</title>
+    <title>Selamat Datang | Muhacode</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="assets/profile.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--Navbar-->
-    <div class="navbar" id="navbar-responsive">
-        <a href="/muharsyad.github.io/" class="name">Muhammad Arsyad</a>
-        <a href="/muharsyad.github.io/#contact" class="right">Contact</a>
-        <a href="/services/" class="right">Services</a>
-        <a href="/blog/" class="right">Blog</a>
-        <a href="/course/" class="right">Learning Hub</a>
-        <a href="/portfolio/" class="right">Portfolio</a>
-        <a href="/muharsyad.github.io/#about-me" class="right">About Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()">
-            <i class="ri-menu-line"></i>
-        </a>
+    <!-- NAVBAR SECTION -->
+    <div class="navbar flx-rw">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/logo-nav.png" alt="">
+            </a>
+        </div>
+        <div class="nav-links flx-rw" id="navLinks">
+            <a href="#" class="active">Home</a>
+            <a href="#">Course</a>
+            <a href="#">Service</a>
+            <a href="#">Blog</a>
+            <a href="#">Showcase</a>
+            <a href="#">Roadmap</a>
+            <a href="#">About Me</a>
+        </div>
+        <div class="nav-button flx-rw">
+            <button id="theme-toggle"><i class="ri-moon-fill"></i></button>
+            <div class="hamburger" onclick="toggleNavbar()"><i class="ri-menu-fill"></i></div>
+        </div>
     </div>
-    
+
     <!-- HERO SECTION -->
-    <div class="hero-section flx-rw">
-        <div class="flx-item">
-            <h1>🚀 Bridging Mathematics & AI to Solve Real-World Problems</h1>
-            <p>Saya adalah seorang ML/AI Engineer & Data Scientist dengan latar belakang kuat di matematika, statistika, dan machine learning. Dengan pengalaman dalam AI, risk modeling, dan data-driven decision making, saya berfokus pada membangun solusi inovatif yang berdampak nyata. Terbuka untuk kolaborasi, proyek, dan peluang kerja yang menantang!</p>
-            <div class="call-btn flx-rw">
-                <div class="flx-item">
-                    <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/">📩 Hubungi Saya</a>
-                </div>
-                <div class="flx-item">
-                    <a href="/portfolio">👉 Lihat Portofolio Saya</a>
-                </div>
+    <div class="flx-rw hero-section">
+        <div class="item flx-cl">
+            <h1>Belajar Data & AI Gratis, Mulai dari Nol</h1>
+            <p>Dapatkan akses ke kursus gratis tentang matematika, data science, machine learning, dan artificial intelligence</p>
+            <div class="cta-btn flx-rw">
+                <a href="#" class="btn-1">Mulai Belajar Gratis</a>
+                <a href="#" class="btn-2">Lihat Jasa Kami</a>
             </div>
         </div>
-        <div class="flx-item">
-            <img src="assets/profile.jpg" alt="">
+        <div class="item ">
+            <img src="assets/herosection.png" alt="">
         </div>
     </div>
 
-    <!-- ABOUT ME -->
-    <div class="about-me-section flx-rw" id="about-me">
-        <div class="flx-item">
-            <h2>👋 Hi, I’m Muhammad Arsyad</h2>
-            <p>Saya adalah seorang Machine Learning & AI Engineer dengan latar belakang kuat di matematika, statistika, dan pemrograman. Saya memiliki pengalaman dalam pengembangan model AI, analisis data, serta risk modeling, dan selalu tertarik untuk mengeksplorasi bagaimana teknologi dapat menyelesaikan masalah dunia nyata.</p>
-            <br>
-            <p style="margin-bottom: 20px;">Saya terbuka untuk kesempatan kerja, proyek kolaboratif, dan diskusi seputar AI, Machine Learning, Data Science, Risk Management, dan Internal Audit. Jika Anda memiliki proyek menarik atau ingin berdiskusi, jangan ragu untuk menghubungi saya!</p>
-            <div class="call-btn">
-                <a href="cv.html">📄 Unduh CV Saya</a>
+    <!-- COURSE SECTION -->
+    <div class="course-section flx-cl">
+        <h2>Master the Future with Our Course</h2>
+        <p>From online to offline, dive into course that cover Data Science, AI, Machine Learning, and more.</p>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-1.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam commodi at reiciendis quod aliquam vero animi nisi cum placeat!</p>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-2.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam commodi at reiciendis quod aliquam vero animi nisi cum placeat!</p>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-3.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam commodi at reiciendis quod aliquam vero animi nisi cum placeat!</p>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide flx-rw">
+                    <div class="visual">
+                        <img src="assets/thumbnail-4.png" alt="">
+                    </div>
+                    <div class="content flx-cl">
+                        <div>
+                            <h3>Python Programming Course</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam commodi at reiciendis quod aliquam vero animi nisi cum placeat!</p>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="#" class="btn-1">Start Learn</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="prev" onclick="changeSlide(-1)"><i class="ri-arrow-left-s-line"></i></button>
+            <button class="next" onclick="changeSlide(1)"><i class="ri-arrow-right-s-line"></i></button>
         </div>
-        <div class="flx-item">
-            <h2>🔍 Keahlian Utama</h2>
-            <ul>
-                <li>✔ Machine Learning & Deep Learning (Supervised, Unsupervised, GANs)</li>
-                <li>✔ Computer Vision (Image Processing, Object Detection, GANs)</li>
-                <li>✔ Mathematics & Statistics (Probabilitas, Optimasi, Model Risiko)</li>
-                <li>✔ Data Science & Analytics (Data Wrangling, Exploratory Data Analysis)</li>
-                <li>✔ Risk Management & Quantitative Modeling</li>
-                <li>✔ Programming (Python, SQL, Git, Manim)</li>
-                <li>✔ Tools & Libraries: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy</li>
-            </ul>
+        <div class="cta-btn">
+            <a href="#" class="btn-2">Show More</a>
         </div>
     </div>
 
-    <div class="portfolio-section">
-        <h2><i class="ri-code-s-slash-fill"></i> Portfolio</h2>
-        <p style="margin-bottom: 30px; text-align: center;">Beberapa proyek yang telah saya kerjakan dalam bidang AI, Machine Learning, dan Data Science.</p>
-        <div class="container">
-            <div class="card">
+    <!-- ROADMAP SECTION -->
+    <div class="roadmap-section flx-cl">
+        <div class="item flx-cl">
+            <h2>Belajar dengan Panduan yang Jelas</h2>
+            <p>Ikuti roadmap belajar mulai dari pemula hingga mahir di bidang Data & AI.</p>
+            <div class="cta-btn">
+                <a href="#" class="btn-1">Mulai Sekarang</a>
+            </div>
+        </div>
+        <div class="item">
+            <iframe src="https://roadmap.sh/r/embed?id=67c909b2fe4b7df03b83d187" width="100%" height="700px" frameBorder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- SHOWCASE SECTION -->
+    <div class="showcase-section flx-cl">
+        <div class="item">
+            <h2>Lihat Karya Pengguna dan Proyek Menarik</h2>
+            <div class="cta-btn flx-rw">
+                <a href="#" class="btn-1">Tambahkan Proyek Anda</a>
+                <a href="#" class="btn-2">Lihat Proyek Lainnya</a>
+            </div>
+        </div>
+        <div class="item card-container">
+            <div class="card-item">
                 <img src="assets/produsket.png" alt="">
                 <h3>🎨 ProduSket – AI untuk Fashion Sketch</h3>
                 <p>Menggunakan GAN untuk mengubah sketsa fashion menjadi gambar realistis.</p>
                 <p><b>Teknologi:</b> Python, TensorFlow, OpenCV</p>
+                <p>Oleh: <a href="#" style="text-decoration: underline;">Muhammad Arsyad</a></p>
                 <div class="links">
                     <a href="https://github.com/muharsyad/Final-Project-StartupCampus-MSIB"><i class="ri-github-fill"></i> GitHub</a>
                     <a href="https://visiongen.streamlit.app/"><i class="ri-links-fill"></i> Demo</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-item">
                 <img src="assets/produsket.png" alt="">
                 <h3>🔍 Deteksi Komentar Judi Online</h3>
                 <p>Model NLP untuk mendeteksi komentar yang mengandung unsur perjudian.</p>
                 <p><b>Teknologi:</b> Python, NLP, Scikit-learn</p>
+                <p>Oleh: <a href="#" style="text-decoration: underline;">Muhammad Arsyad</a></p>
                 <div class="links">
                     <a href="#"><i class="ri-github-fill"></i> GitHub</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-item">
                 <img src="assets/produsket.png" alt="">
                 <h3>🏎️ Analisis Data F1</h3>
                 <p>Analisis performa pembalap F1 menggunakan data historis.</p>
                 <p><b>Teknologi:</b> Pandas, SQL, Matplotlib</p>
+                <p>Oleh: <a href="#" style="text-decoration: underline;">Muhammad Arsyad</a></p>
                 <div class="links">
                     <a href="#"><i class="ri-youtube-fill"></i> YouTube</a>
                     <a href="#"><i class="ri-book-fill"></i> Notebook</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-item">
                 <img src="assets/produsket.png" alt="">
                 <h3>🎨 ProduSket – AI untuk Fashion Sketch</h3>
                 <p>Menggunakan GAN untuk mengubah sketsa fashion menjadi gambar realistis.</p>
                 <p><b>Teknologi:</b> Python, TensorFlow, OpenCV</p>
+                <p>Oleh: <a href="#" style="text-decoration: underline;">Muhammad Arsyad</a></p>
                 <div class="links">
                     <a href="#"><i class="ri-github-fill"></i> GitHub</a>
                     <a href="#"><i class="ri-links-fill"></i> Demo</a>
@@ -116,164 +190,172 @@
                 </div>
             </div>
         </div>
-        <a href="\portfolio\" class="btn-more">👉 Show More</a>
     </div>
 
-    <div class="course-section">
-        <h2><i class="ri-book-open-fill"></i> Course & Learning Hub</h2>
-        <p style="margin-bottom: 30px; text-align: center;">Pelajari AI, Machine Learning, dan Data Science dengan kursus & bacaan berikut!</p>
-
-        <div class="container">
-            <div class="card">
-                <span class="badge free">✅ Gratis</span>
-                <img src="assets/thumbnail-1.png" alt="">
-                <h3>📚 30 Days to Master Machine Learning</h3>
-                <p>Kursus intensif 30 hari untuk menguasai Machine Learning dari nol.</p>
-                <p><b>Format:</b> Online Course + Jupyter Notebook</p>
-                <div class="links">
-                    <a href="#"><i class="ri-play-fill"></i> Mulai Kursus</a>
-                </div>
+    <!-- BLOG-SECTION -->
+    <div class="blog-section flx-cl">
+        <div class="item">
+            <h2>Artikel dan Insight Baru</h2>
+        </div>
+        <div class="item flx-cl blog-container">
+            <div class="line"></div>
+            <div class="blog-item">
+                <a href="#" class="flx-rw">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam saepe fugiat iusto voluptas cumque culpa temporibus unde quod commodi.</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/icon-1.png" alt="">
+                    </div>
+                </a>
             </div>
-
-            <div class="card">
-                <span class="badge paid">🔥 Berbayar</span>
-                <img src="assets/thumbnail-2.png" alt="">
-                <h3>🤖 Deep Learning Fundamentals</h3>
-                <p>Pahami dasar-dasar Deep Learning dan implementasi dengan TensorFlow & PyTorch.</p>
-                <p><b>Format:</b> Video + Code Examples</p>
-                <div class="links">
-                    <a href="#"><i class="ri-video-on-fill"></i> Lihat Kursus</a>
-                </div>
+            <div class="line"></div>
+            <div class="blog-item">
+                <a href="#" class="flx-rw">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam saepe fugiat iusto voluptas cumque culpa temporibus unde quod commodi.</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/icon-1.png" alt="">
+                    </div>
+                </a>
             </div>
-
-            <div class="card">
-                <span class="badge free">✅ Gratis</span>
-                <img src="assets/thumbnail-3.png" alt="">
-                <h3>📊 Data Science for Beginners</h3>
-                <p>Pelajari teknik dasar analisis data dan visualisasi menggunakan Python.</p>
-                <p><b>Format:</b> Artikel + Praktek</p>
-                <div class="links">
-                    <a href="#"><i class="ri-book-fill"></i> Baca Materi</a>
-                </div>
+            <div class="line"></div>
+            <div class="blog-item">
+                <a href="#" class="flx-rw">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam saepe fugiat iusto voluptas cumque culpa temporibus unde quod commodi.</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/icon-1.png" alt="">
+                    </div>
+                </a>
             </div>
+            <div class="line"></div>
+            <div class="blog-item">
+                <a href="#" class="flx-rw">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ullam saepe fugiat iusto voluptas cumque culpa temporibus unde quod commodi.</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/icon-1.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="cta-btn">
+            <a href="#" class="btn-1">Lihat Semua Artikel</a>
+        </div>
+    </div>
 
-            <div class="card">
-                <span class="badge paid">🔥 Berbayar</span>
-                <img src="assets/thumbnail-4.png" alt="">
-                <h3>📈 Advanced AI & ML for Risk Analysis</h3>
-                <p>Teknik canggih dalam Machine Learning untuk analisis risiko dan prediksi.</p>
-                <p><b>Format:</b> Online Course + Case Study</p>
-                <div class="links">
-                    <a href="#"><i class="ri-graduation-cap-fill"></i> Lihat Kursus</a>
-                </div>
+    <!-- SERVICE SECTION -->
+    <div class="service-section flx-rw">
+        <div class="item flx-cl">
+            <h2>Data dan AI Services Tailored for You</h2>
+            <p>Let us handle your data challenges. From analysis to model development, we provide customized solutions.</p>
+            <div class="cta-btn">
+                <a href="#" class="btn-1">Lihat Detail Layanan</a>
             </div>
         </div>
-        <a href="\course\" class="btn-more">👉 Show More</a>
-    </div>
-
-    <div class="blog-section">
-        <h2><i class="ri-newspaper-fill"></i> Blog & Artikel</h2>
-        <p style="margin-bottom: 30px; text-align: center;">Baca tulisan terbaru tentang AI, Machine Learning, dan Data Science!</p>
-        <div class="container">
-
-            <div class="card">
-                <span class="badge ai">🤖 AI</span>
-                <img src="assets/thumbnail-4.png" alt="">
-                <h3>Bagaimana AI Mengubah Industri?</h3>
-                <p>Eksplorasi dampak AI dalam berbagai bidang, dari kesehatan hingga bisnis.</p>
-                <p><b>Dipublikasikan:</b> 10 Februari 2025</p>
-                <div class="links">
-                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
-                </div>
+        <div class="item grid-container">
+            <div class="grid-item">
+                <a href="#">
+                    <img src="assets/thumbnail-1.png" alt="">
+                </a>
             </div>
-    
-            <div class="card">
-                <span class="badge ml">📈 Machine Learning</span>
-                <img src="assets/thumbnail-4.png" alt="">
-                <h3>Panduan Linear Regression untuk Pemula</h3>
-                <p>Memahami regresi linear dan implementasinya dengan Python.</p>
-                <p><b>Dipublikasikan:</b> 5 Februari 2025</p>
-                <div class="links">
-                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
-                </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="assets/thumbnail-2.png" alt="">
+                </a>
             </div>
-    
-            <div class="card">
-                <span class="badge data">📊 Data Science</span>
-                <img src="assets/thumbnail-4.png" alt="">
-                <h3>Data Cleaning: Langkah Penting dalam Analisis</h3>
-                <p>Kenapa data cleaning itu krusial dalam proyek data science?</p>
-                <p><b>Dipublikasikan:</b> 1 Februari 2025</p>
-                <div class="links">
-                    <a href="#"><i class="ri-book-open-fill"></i> Baca Selengkapnya</a>
-                </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="assets/thumbnail-3.png" alt="">
+                </a>
             </div>
-    
-        </div>
-        <a href="\blog\" class="btn-more">👉 Show More</a>
-    </div>
-
-    <div class="service-section">
-        <h2><i class="ri-settings-4-line"></i> Services & Expertise</h2>
-        <p style="margin-bottom: 30px; text-align: center;">Layanan yang saya tawarkan dalam bidang AI, Machine Learning, dan Data Science.</p>
-
-        <div class="container">
-
-            <div class="card">
-                <span class="badge ml">🤖 Machine Learning</span>
-                <i class="ri-brain-fill"></i>
-                <h3>Pengembangan Model ML</h3>
-                <p>Membangun model Machine Learning yang optimal untuk prediksi dan analisis data.</p>
-                <div class="links">
-                    <a href="#"><i class="ri-mail-fill"></i> Hubungi Saya</a>
-                </div>
-            </div>
-    
-            <div class="card">
-                <span class="badge data">📊 Data Science</span>
-                <i class="ri-line-chart-fill"></i>
-                <h3>Analisis Data & Visualisasi</h3>
-                <p>Menganalisis data dan menyajikan insight dengan visualisasi interaktif.</p>
-                <div class="links">
-                    <a href="#"><i class="ri-mail-fill"></i> Hubungi Saya</a>
-                </div>
-            </div>
-    
-            <div class="card">
-                <span class="badge consult">📞 Konsultasi</span>
-                <i class="ri-user-2-fill"></i>
-                <h3>Konsultasi AI & ML</h3>
-                <p>Memberikan solusi berbasis AI & ML sesuai kebutuhan bisnis atau proyek Anda.</p>
-                <div class="links">
-                    <a href="#"><i class="ri-mail-fill"></i> Hubungi Saya</a>
-                </div>
-            </div>
-    
-        </div>
-        <a href="\service\" class="btn-more">👉 Show More</a>
-    </div>
-
-    <div class="contact-section" id="contact">
-        <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
-        <p style="margin-bottom: 30px; text-align: center;">Hubungi saya untuk kolaborasi, konsultasi, atau sekadar berdiskusi!</p>
-
-        <div class="contact-container">
-            <form action="mailto:muharsyad2201@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Nama Anda" required>
-                <input type="email" name="email" placeholder="Email Anda" required>
-                <textarea name="message" rows="5" placeholder="Pesan Anda..." required></textarea>
-                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Kirim</button>
-            </form>
-            
-    
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="https://github.com/muharsyad" target="_blank"><i class="ri-github-fill"></i></a>
-                <a href="https://www.instagram.com/muha.rsyd/" target="_blank"><i class="ri-instagram-fill"></i></a>
-                <a href="mailto:muharsyad2201@gmail.com"><i class="ri-mail-fill"></i></i></a>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="assets/thumbnail-4.png" alt="">
+                </a>
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
+
+    <!-- ABOUTME-SECTION -->
+    <div class="about-me-section flx-rw">
+        <div class="item">
+            <h2>About Me</h2>
+            <p>Saya Muhammad Arsyad, seorang data scientist & machine learning engineering dengan latar belakang kuat di matematika, statistika, dan pemrograman. Saya memiliki pengalaman dalam pengembangan model, statistika data, dan lain-lain. Saya selalu tertarik untuk mengeksplorasi bagaimana teknologi dapat menyelesaikan masalah dunia nyata</p>
+            <br>
+            <p>Saya terbuka untuk kesempatan kerja, proyek kolaboratif, dan diskusi seputar AI, machine learning, dan data science. Jika anda memiliki proyek menarik atau ingin berdiskusi, jangan ragu untuk menghubungi saya.</p>
+            <div class="cta-btn flx-rw">
+                <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/" class="btn-1">Hubungi Saya</a>
+                <a href="/portfolio" class="btn-2">Lihat Portofolio Saya</a>
+                <a href="cv.html" class="btn-1">📄 Unduh CV Saya</a>
+            </div>
+            <p style="margin-bottom: 30px; text-align: center;">Hubungi saya untuk kolaborasi, konsultasi, atau sekadar berdiskusi!</p>
+
+            <div class="contact-container">
+                <form action="mailto:muharsyad2201@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <textarea name="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i> Kirim</button>
+                </form>
+                
+        
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://github.com/muharsyad" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.instagram.com/muha.rsyd/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="mailto:muharsyad2201@gmail.com"><i class="ri-mail-fill"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="assets/profile.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer-section flx-cl">
+        <div class="item flx-rw">
+            <div class="item muhacode">
+                <img src="assets/logo-nav.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora illo pariatur delectus veniam earum unde libero eum sequi numquam.</p>
+                <div class="flx-rw social-icons">
+                    <a href="https://www.linkedin.com/in/muhammad-arsyad-59865120a/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://github.com/muharsyad" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.instagram.com/muha.rsyd/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="mailto:muharsyad2201@gmail.com"><i class="ri-mail-fill"></i></i></a>
+                </div>
+            </div>
+            <div class="item flx-cl">
+                <h4>Navigation</h4>
+                <a href="#">Course</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Showcase</a>
+                <a href="#">Blog</a>
+                <a href="#">Service</a>
+                <a href="#">About Me</a>
+            </div>
+            <div class="item flx-cl">
+                <h4>Contact</h4>
+                <p>Email: <a href="#">hello.muhacode@gmail.com</a></p>
+                <p>Phone: <a href="#">+6282324761705</a></p>
+                <p>location: Banyumas, Jawa Tengah, Indonesia</p>
+            </div>
+        </div>
+        <div class="item line"></div>
+        <div class="copy-right">
+            <p>&copy 2024 Muhacode. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
