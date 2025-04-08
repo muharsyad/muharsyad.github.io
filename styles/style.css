@@ -139,6 +139,19 @@ body.dark .line {
     height: calc(100vh - 65px);
 }
 
+.btn-lang {
+    cursor: pointer;
+    padding: 6px 10px;
+    background-color: var(--light-clr-surface-tonal-a50);
+    border: 1px solid var(--dark-clr-surface-tonal-a10);
+    border-radius: 5px;
+}
+
+body.dark .btn-lang {
+    background-color: var(--dark-clr-surface-tonal-a0);
+    border: 1px solid var(--light-clr-surface-tonal-a10);
+}
+
 /* NAVBAR SECTION */
 .navbar {
     background-color: var(--light-clr-surface-tonal-a50);
@@ -685,6 +698,7 @@ body.dark .footer-section {
     .slide {
         flex-direction: column;
         width: 100%;
+        justify-content: flex-start;
     }
     .slide .visual, .slide .content {
         width: 100%;
