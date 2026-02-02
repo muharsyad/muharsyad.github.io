@@ -156,52 +156,63 @@
             </div>
 
             <div class="grid-3">
-                <div class="course-card" style="--card-color: var(--brand-primary);">
+                <!-- Course 1: Math -->
+                <div class="course-card" data-category="math" style="--card-color: var(--brand-primary);">
+                    <div class="course-thumb">
+                        <span class="symbol font-mono">∫ dx</span>
+                        <div class="badge-premium">PREMIUM</div>
+                    </div>
+                    <div class="course-body">
+                        <div class="tag-row">
+                            <span class="tag tag-blue font-mono">Math</span>
+                            <span class="tag tag-amber font-mono">Beginner</span>
+                        </div>
+                        <h3>Kalkulus untuk Data Science</h3>
+                        <p>Pelajari limit, turunan, dan integral dengan fokus pada aplikasinya dalam algoritma optimasiAI.</p>
+                        <div class="card-footer">
+                            <div class="meta-info"><i class="far fa-clock"></i> 8 Jam</div>
+                            <a href="#" class="btn-link-animated" style="font-size: 0.875rem; font-family: 'JetBrains Mono';">Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2: Python -->
+                <div class="course-card" data-category="python" style="--card-color: #60A5FA;">
                     <div class="course-thumb">
                         <i class="fab fa-python"></i>
-                        <div class="free-badge">FREE</div>
+                        <div class="badge-free">FREE</div>
                     </div>
                     <div class="course-body">
                         <div class="tag-row">
                             <span class="tag tag-blue font-mono">Python</span>
-                            <span class="tag tag-amber font-mono">Beginner</span>
+                            <span class="tag tag-amber font-mono">Fundamental</span>
                         </div>
                         <h3>Python from Scratch</h3>
-                        <p>Pelajari Python dari nol hingga konsep OOP dengan studi kasus sederhana.</p>
-                        <a href="#" class="course-link">Start Learning</a>
+                        <p>Panduan lengkap Python. Dari variabel, loop, hingga konsep Object Oriented Programming (OOP).</p>
+                        <div class="card-footer">
+                            <div class="meta-info"><i class="far fa-clock"></i> 12 Jam</div>
+                            <a href="#" class="btn-link-animated" style="font-size: 0.875rem; font-family: 'JetBrains Mono';">Mulai Belajar &rarr;</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="course-card" style="--card-color: #a78bfa;">
+                <!-- Course 3: Data -->
+                <div class="course-card" data-category="data" style="--card-color: #34d399;">
                     <div class="course-thumb">
-                        <span class="font-mono">f(x)</span>
+                        <i class="fas fa-database"></i>
+                        <div class="badge-premium">PREMIUM</div>
                     </div>
                     <div class="course-body">
                         <div class="tag-row">
-                            <span class="tag tag-amber font-mono">Math</span>
-                            <span class="tag font-mono"
-                                style="background:rgba(167,139,250,0.1); color:#a78bfa;">Theory</span>
+                            <span class="tag tag-blue font-mono">Data</span>
+                            <span class="tag tag-amber font-mono">Intemediate</span>
                         </div>
-                        <h3>Mathematics for ML</h3>
-                        <p>Aljabar Linear dan Kalkulus yang benar-benar Anda butuhkan untuk AI.</p>
-                        <a href="#" class="course-link">Start Learning</a>
-                    </div>
-                </div>
-
-                <div class="course-card" style="--card-color: #34d399;">
-                    <div class="course-thumb">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="course-body">
-                        <div class="tag-row">
-                            <span class="tag font-mono"
-                                style="background:rgba(52,211,153,0.1); color:#34d399;">Data</span>
-                            <span class="tag font-mono"
-                                style="background:rgba(251,146,60,0.1); color:#fb923c;">Intermediate</span>
+                        <h3>Mastering Pandas & SQL</h3>
+                        <p>Teknik wrangling data tingkat lanjut. Gabungkan kekuatan Python Pandas dan SQL Query.</p>
+                        <div class="card-footer">
+                            <div class="meta-info"><i class="far fa-clock"></i> 10 Jam</div>
+                            <a href="#" class="btn-link-animated" style="font-size: 0.875rem; font-family: 'JetBrains Mono';">Detail &rarr;</a>
                         </div>
-                        <h3>Data Visualization</h3>
-                        <p>Bercerita dengan data menggunakan Matplotlib, Seaborn, dan Tableau.</p>
-                        <a href="#" class="course-link">Start Learning</a>
                     </div>
                 </div>
             </div>
@@ -324,7 +335,6 @@
                 <div>
                     <h4 class="footer-title">Navigasi</h4>
                     <ul class="footer-links">
-                        <li><a href="muharsyad.github.io">Beranda</a></li>
                         <li><a href="course">Course</a></li>
                         <li><a href="roadmap">Roadmap</a></li>
                         <li><a href="service">Layanan</a></li>
