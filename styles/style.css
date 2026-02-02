@@ -437,6 +437,49 @@ section {
     }
 }
 
+/* --- COURSE CARD --- */
+.course-card {
+    background: var(--brand-card);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Custom Hover Colors by Category */
+/* --- COURSE GRID --- */
+main {
+    padding: 3rem 0;
+    flex-grow: 1;
+    position: relative;
+    z-index: 1; /* Di atas background symbols */
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- COURSE CARD (Opaque Version) --- */
 .course-card {
     background-color: var(--brand-card);
     border-radius: 12px;
@@ -447,6 +490,16 @@ section {
 
 .course-card:hover {
     border-color: var(--card-color);
+}
+
+.card-header {
+    height: 160px;
+    background-color: var(--brand-header); /* Warna Solid (Tidak Transparan) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .course-thumb {
@@ -471,7 +524,19 @@ section {
     color: var(--card-color);
 }
 
-.free-badge {
+.badge-free {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--brand-primary);
+    color: var(--brand-dark);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.badge-premium {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -485,6 +550,9 @@ section {
 
 .course-body {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .tag-row {
@@ -510,12 +578,38 @@ section {
     color: var(--brand-secondary);
 }
 
-.course-link {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
+.course-body h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.course-body p {
     font-size: 0.875rem;
-    border-bottom: 1px solid var(--card-color);
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-footer {
+    border-top: 1px solid #334155;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-info {
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+.course-card a {
+    color: var(--text-white);
+}
+
+.course-card a.btn-link-animated:hover {
+    color: var(--brand-primary);
 }
 
 /* --- SERVICES SECTION --- */
