@@ -910,10 +910,32 @@ nav.scrolled {
 .res-icon.green { background: rgba(34, 197, 94, 0.1); color: #4ade80; }
 .res-icon.purple { background: rgba(168, 85, 247, 0.1); color: #c084fc; }
 
-.badge-red { border: 1px solid rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05); color: #f87171; }
-.badge-blue { border: 1px solid rgba(59, 130, 246, 0.2); background: rgba(59, 130, 246, 0.05); color: #60a5fa; }
-.badge-green { border: 1px solid rgba(34, 197, 94, 0.2); background: rgba(34, 197, 94, 0.05); color: #4ade80; }
-.badge-purple { border: 1px solid rgba(168, 85, 247, 0.2); background: rgba(168, 85, 247, 0.05); color: #c084fc; }
+.badge-red {
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    background: rgba(239, 68, 68, 0.05);
+    color: #f87171;
+}
+.badge-blue {
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    background: rgba(59, 130, 246, 0.05);
+    color: #60a5fa;
+}
+.badge-green {
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    background: rgba(34, 197, 94, 0.05);
+    color: #4ade80;
+}
+.badge-purple {
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    background: rgba(168, 85, 247, 0.05);
+    color: #c084fc;
+}
+
+.badge-yellow {
+    border-color:rgba(251,191,36,0.2); 
+    background:rgba(251,191,36,0.05); 
+    color:var(--brand-secondary);
+}
 
 .res-content {
     flex-grow: 1;
