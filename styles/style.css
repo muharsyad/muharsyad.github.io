@@ -96,7 +96,7 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #E09F8F;
+    background-color: var(--light-accent-secondary);
     transform: translateY(-2px);
 }
 
@@ -248,10 +248,6 @@ nav.logo a {
     display: block;
     padding: 0.75rem 1rem;
     border-radius: 6px;
-}
-
-.mobile-menu-panel a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* --- MAIN HERO SECTION --- */
@@ -1126,9 +1122,14 @@ footer {
 }
 
 .footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
     margin-bottom: 1rem;
+    display: inline-block; /* Diubah menjadi inline-block agar pas membungkus gambar */
+}
+
+/* Tambahkan style baru untuk mengatur ukuran gambar logo */
+.footer-logo img {
+    height: 80px; /* Sesuaikan nilai ini agar pas dengan desainmu (misal: 30px, 40px, atau 50px) */
+    width: auto;  /* Menjaga proporsi logo agar tidak gepeng */
     display: block;
 }
 
