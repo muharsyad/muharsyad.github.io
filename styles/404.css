@@ -423,7 +423,7 @@ footer {
 
 .social-row a {
     font-size: 1.25rem;
-    color: var(--light-text-primary);
+    color: var(--light-text-secondary);
     transition: var(--transition);
 }
 

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,6 +32,7 @@
                 <li><a href="#services">Layanan</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#resources">Resource</a></li>
+                <li><a href="#shop" class="nav-shop-badge"><i class="fas fa-store"></i> Shop <span class="pulse-dot"></span></a></li>
                 <li style="display: none;"><a href="#donate">Donasi</a></li>
             </ul>
 
@@ -48,14 +49,17 @@
         </div>
 
         <div class="mobile-menu-panel font-mono" id="mobile-menu">
-            <a href="#roadmap" onclick="toggleMenu()">Roadmap</a>
-            <a href="#courses" onclick="toggleMenu()">Course</a>
-            <a href="#services" onclick="toggleMenu()">Layanan</a>
-            <a href="#portfolio" onclick="toggleMenu()">Portofolio</a>
-            <a href="#resources" onclick="toggleMenu()">Resource</a>
-            <a href="#donate" onclick="toggleMenu()" style="display: none;">Donasi</a>
-            <a href="profile/" onclick="toggleMenu()" style="color: var(--brand-primary); font-weight: bold;">Tentang
-                Saya</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#courses">Course</a>
+            <a href="#services">Layanan</a>
+            <a href="#portfolio">Portofolio</a>
+            <a href="#blog">Blog</a>
+            <a href="#resources">Resource</a>
+            <a href="#shop" style="color: var(--light-accent-primary); font-weight: 700;">
+                <i class="fas fa-store" style="margin-right: 6px;"></i> Shop
+            </a>
+            <a href="#donate" style="display: none;">Donasi</a>
+            <a href="profile/" style="color: var(--light-text-primary); font-weight: bold;">Tentang Saya</a>
         </div>
     </nav>
 
@@ -114,7 +118,7 @@
                     <div class="btn-group">
                         <a href="profile/" class="btn btn-primary">Baca Cerita Saya</a>
                         <div class="social-row" style="margin-left: 10px;">
-                            <a href="https://github.com/muharsyad" style="--icon-color: #fff" target="_blank"><i
+                            <a href="https://github.com/muharsyad" style="--icon-color: #3D3833" target="_blank"><i
                                     class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/muharsyad/" style="--icon-color: #3b82f6"
                                 target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -122,7 +126,7 @@
                                     class="fab fa-youtube"></i></a>
                             <a href="https://www.instagram.com/muhacode" style="--icon-color: #E91E63"
                                 target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://arsyadmuh.medium.com/" style="--icon-color: #fff" target="_blank"><i
+                            <a href="https://arsyadmuh.medium.com/" style="--icon-color: #3D3833" target="_blank"><i
                                     class="fab fa-medium"></i></a>
                         </div>
                     </div>
@@ -134,7 +138,7 @@
     <section id="roadmap">
         <div class="container">
             <div class="section-header">
-                <h2>Learning <span style="color: var(--light-text-primary)">Roadmap</span></h2>
+                <h2>Learning <span style="color: var(--light-accent-primary)">Roadmap</span></h2>
                 <p style="color: var(--light-text-secondary)">Jalur terstruktur dari nol hingga mahir.</p>
             </div>
 
@@ -146,7 +150,7 @@
                         Statistika Dasar.</p>
                 </a>
 
-                <a href="raodmap/programming/" class="card" style="--accent-color: var(--light-dusty-blue);">
+                <a href="roadmap/programming/" class="card" style="--accent-color: var(--light-dusty-blue);">
                     <div class="step-num">2</div>
                     <h3 style="margin-bottom: 0.5rem;">Programming</h3>
                     <p style="color: var(--light-text-secondary); font-size: 0.875rem;">Python Syntax, Data Structures, Algorithms
@@ -201,7 +205,7 @@
                         <p>Pahami vektor, matriks, eigen-value, dan dekomposisi yang menjadi jantung Neural Network.</p>
                         <div class="card-footer">
                             <div class="meta-info"><i class="far fa-clock"></i> 15 Jam</div>
-                            <a href="../course/aljabar-linier-elementer" class="btn-link-animated"
+                            <a href="course/aljabar-linier-elementer" class="btn-link-animated"
                                 style="font-size: 0.875rem; font-family: 'JetBrains Mono';">Mulai Belajar <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
@@ -222,7 +226,7 @@
                         <p>Panduan taktis menaklukkan Olimpiade Matematika SMA melalui pemahaman logika dan konsep yang matang.</p>
                         <div class="card-footer">
                             <div class="meta-info"><i class="far fa-clock"></i> 40+ Jam</div>
-                            <a href="../course/osn-matematika-sma" class="btn-link-animated">Detail &rarr;</a>
+                            <a href="course/osn-matematika-sma" class="btn-link-animated">Detail &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +245,7 @@
                         <p>Solusi langkah demi langkah soal OSN Matematika untuk membangun pemahaman konsep yang mendalam.</p>
                         <div class="card-footer">
                             <div class="meta-info"><i class="far fa-clock"></i> 40+ Jam</div>
-                            <a href="../course/pembahasan-osn-matematika-sma" class="btn-link-animated">Detail &rarr;</a>
+                            <a href="course/pembahasan-osn-matematika-sma" class="btn-link-animated">Detail &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +310,7 @@
                     </div>
                     <div class="card-body">
                         <div class="card-header-row">
-                            <h3 class="project-title">ProduSket: Transfromasi Gambar Produk Dari Sketsa Dengan Cepat</h3>
+                            <h3 class="project-title">ProduSket: Transformasi Gambar Produk Dari Sketsa Dengan Cepat</h3>
                             <div class="external-links">
                                 <a href="https://github.com/visiongen/Final-Project-StartupCampus-MSIB" target="_blank"><i class="fab fa-github"></i></a>
                                 <a href="https://visiongen.streamlit.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
@@ -316,11 +320,11 @@
 
                         <div class="card-footer-info">
                             <span class="footer-label">Result</span>
-                            <span class="footer-value" style="color: var(--brand-secondary);">Inception Score:
+                            <span class="footer-value" style="color: var(--light-accent-primary);">Inception Score:
                                 1.307</span>
                         </div>
 
-                        <a href="../portfolio/produsket-transformasi-gambar-produk-dari-sketsa-dengan-cepat" class="btn-view-detail">
+                        <a href="portfolio/produsket-transformasi-gambar-produk-dari-sketsa-dengan-cepat" class="btn-view-detail">
                             Lihat Detail Proyek <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -363,8 +367,8 @@
     <section id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Professional <span style="color: var(--brand-primary)">Services</span></h2>
-                <p style="color: var(--text-gray)">Solusi teknologi & edukasi yang disesuaikan kebutuhan Anda.</p>
+                <h2>Professional <span style="color: var(--light-accent-primary)">Services</span></h2>
+                <p style="color: var(--light-text-secondary)">Solusi teknologi & edukasi yang disesuaikan kebutuhan Anda.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -476,7 +480,7 @@
                             </span>
                         </div>
                         <h3>Mastering Python: A Deep Dive into Lists and List Comprehensions</h3>
-                        <p>Master Python lists &amp; list comprehensions — concise, readable, and efficient! Learn to
+                        <p>Master Python lists &amp; list comprehensions — concise, readable, and efficient! Learn to
                             harness their power for cleaner, faster code.</p>
                         <div class="card-footer">
                             <div class="meta-info"><i class="far fa-clock"></i> 3 Min Read</div>
@@ -567,7 +571,7 @@
                         </div>
                     </div>
                     <div class="res-action">
-                        <a href="../resource/assets/doc/osn-matematika-sma-2023.pdf" class="btn-download" title="Unduh" target="_blank">
+                        <a href="resource/assets/doc/osn-matematika-sma-2023.pdf" class="btn-download" title="Unduh" target="_blank">
                             <i class="fas fa-download"></i> <span class="btn-text">Unduh</span>
                         </a>
                     </div>
@@ -585,7 +589,7 @@
                         </div>
                     </div>
                     <div class="res-action">
-                        <a href="../resource/assets/doc/osn-matematika-sma-2022.pdf" class="btn-download" title="Unduh" target="_blank">
+                        <a href="resource/assets/doc/osn-matematika-sma-2022.pdf" class="btn-download" title="Unduh" target="_blank">
                             <i class="fas fa-download"></i> <span class="btn-text">Unduh</span>
                         </a>
                     </div>
@@ -603,7 +607,7 @@
                         </div>
                     </div>
                     <div class="res-action">
-                        <a href="../resource/assets/doc/osn-matematika-sma-2021.pdf" class="btn-download" title="Unduh" target="_blank">
+                        <a href="resource/assets/doc/osn-matematika-sma-2021.pdf" class="btn-download" title="Unduh" target="_blank">
                             <i class="fas fa-download"></i> <span class="btn-text">Unduh</span>
                         </a>
                     </div>
@@ -612,11 +616,67 @@
         </div>
     </section>
 
+    <!-- ================= SECTION SHOP (TERAKHIR & TANPA CARD) ================= -->
+    <section id="shop" class="shop-section">
+        <div class="container">
+            <div class="shop-showcase-banner">
+                <div class="shop-banner-left">
+                    <span class="shop-pill-tag font-mono"><i class="fas fa-sparkles"></i> MUHACODE OFFICIAL STORE & MERCHANDISE</span>
+                    <h2>Katalog Buku, Poster & Alat Peraga Sains</h2>
+                    <p>Koleksi media pembelajaran terkurasi untuk pelajar SD-SMA, pejuang Olimpiade Matematika (OSN), mahasiswa tingkat universitas, hingga praktisi <strong>Artificial Intelligence & Machine Learning</strong>.</p>
+                    
+                    <div class="shop-steps font-mono">
+                        <div class="shop-step-pill"><span class="step-circle">1</span> Pilih Produk / Masukkan Daftar</div>
+                        <div class="shop-step-pill"><span class="step-circle">2</span> Klik Pesan via WhatsApp</div>
+                        <div class="shop-step-pill"><span class="step-circle">3</span> Konfirmasi Ongkir & Pembayaran</div>
+                    </div>
+
+                    <div class="shop-cta-row">
+                        <a href="shop/" class="btn btn-shop-light"><i class="fas fa-store" style="margin-right: 8px;"></i> Kunjungi Muhacode Shop &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="shop-banner-right">
+                    <div class="code-window-card">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title font-mono">muhacode_catalog.py</span>
+                            <span class="window-badge font-mono">Direct WA Checkout</span>
+                        </div>
+                        <div class="window-grid">
+                            <div class="window-item">
+                                <div class="win-icon tag-dusty-rose"><i class="fas fa-compass-drafting"></i></div>
+                                <span class="win-cat font-mono">MATEMATIKA & OSN</span>
+                                <h4>Modul, Geometri & Alat Peraga</h4>
+                            </div>
+                            <div class="window-item">
+                                <div class="win-icon tag-muted-teal"><i class="fas fa-network-wired"></i></div>
+                                <span class="win-cat font-mono">AI, ML & DATA</span>
+                                <h4>Poster Neural Net & Buku Python</h4>
+                            </div>
+                        </div>
+                        <div class="window-wa-note">
+                            <div class="wa-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <strong>Kenapa pesan lewat WhatsApp?</strong>
+                                <p>Bisa tanya detail isi buku, request bundel sekolah, & cek kurir termurah.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
     <section id="donasi" class="donation-section" style="background-color: rgba(15, 23, 42, 0.3); display: none;">
         <div class="container">
             <div class="section-header" style="margin-bottom: 3rem;">
                 <h2>Dukung <span class="gradient-text">Muhacode</span></h2>
-                <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">Bantu saya terus berkarya,
+                <p style="color: var(--light-text-secondary); max-width: 600px; margin: 0 auto;">Bantu saya terus berkarya,
                     menyediakan konten edukasi, modul matematika, dan tutorial programming berkualitas secara gratis
                     untuk semua.</p>
             </div>
@@ -634,15 +694,15 @@
                     <p>Traktir saya secangkir kopi agar tetap melek coding malam hari.</p>
                 </a>
 
-                <a href="#" class="donation-card" style="--hover-color: var(--brand-primary);">
+                <a href="#" class="donation-card" style="--hover-color: var(--light-accent-primary);">
                     <div class="donation-icon"><i class="fas fa-money-check-alt"></i></div>
                     <h3>Transfer Bank</h3>
-                    <p>BCA: 1234567890<br>A.N. Arsyad</p>
+                    <p><br></p>
                 </a>
             </div>
         </div>
     </section>
-
+-->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -657,11 +717,13 @@
                 <div>
                     <h4 class="footer-title">Navigasi</h4>
                     <ul class="footer-links">
-                        <li><a href="../course/">Course</a></li>
-                        <li><a href="../roadmap/">Roadmap</a></li>
-                        <li><a href="../service/">Layanan</a></li>
-                        <li><a href="../portfolio/">Portofolio</a></li>
-                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="roadmap/">Roadmap</a></li>
+                        <li><a href="course/">Course</a></li>
+                        <li><a href="portfolio/">Portofolio</a></li>
+                        <li><a href="service/">Layanan</a></li>
+                        <li><a href="blog/">Blog</a></li>
+                        <li><a href="resource/">Resource</a></li>
+                        <li><a href="shop/">Shop</a></li>
                     </ul>
                 </div>
 
